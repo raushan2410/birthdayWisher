@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="./threeDanimation.css" type="text/css">
+    <link rel="icon" href="./image/iconmonstr-candy-18-240(1).png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- adding door -->
+    
+    <div class="door-container">
+        <div id="first"></div>
+      <div id="second"></div>
+    </div>
+    <div id="btn-div">
+      <p>
+        <br>
+        A very Happy Birthday to You. <br>
+        Just be the way You are! <br>
+        
+      </p>
+      <button id="btn"></button>
+    </div>
+
+
+    <div id="top">
+        <h2> 
+          <video id="vid" src="./video/paritcle.mp4" muted autoplay ></video>
+          <span>H</span>appy <span>B</span>irthday
+      </h2>
+      <div class="cube">
+          <div class="face1 faces"></div>
+          <div class="face2 faces"></div>
+          <div class="face3 faces"></div>
+          <div class="face4 faces"></div>
+          <div class="face5 faces"></div>
+          <div class="face6 faces"></div>
+      </div>
+    </div>
+      
+      <!-- partial -->
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.5.1/css-doodle.min.js'></script>
+        <script >
+          var vdo = document.getElementById('vid');
+          vdo.pause();
+          setInterval(function() {
+            vdo.play()},3000);
+        </script>
+        <script src="./app.js"></script>
+</body>
+</html>
